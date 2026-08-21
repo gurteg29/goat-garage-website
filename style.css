@@ -1,60 +1,69 @@
+/* ==========================================
+   GOAT GARAGE - STYLE.CSS
+   Version 1.0
+========================================== */
+
+/* ---------- RESET ---------- */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#F7F7F5;
-    color:#111;
+    color:#111111;
+    line-height:1.6;
 }
 
+/* ---------- NAVIGATION ---------- */
+
 .navbar{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:20px 8%;
 
-    background:#111;
+    background:#111111;
 
     position:sticky;
-
     top:0;
+    z-index:1000;
 }
 
 .logo{
     color:#C99700;
-
-    font-size:22px;
-
-    font-weight:bold;
-
+    font-size:24px;
+    font-weight:700;
     letter-spacing:1px;
 }
 
 .quote-btn{
-
     text-decoration:none;
-
     background:#C99700;
+    color:#111111;
 
-    color:#111;
-
-    padding:12px 20px;
-
+    padding:12px 22px;
     border-radius:8px;
 
     font-weight:bold;
+    transition:.3s ease;
 }
-/* HERO SECTION */
+
+.quote-btn:hover{
+    background:#E3B100;
+}
+
+/* ---------- HERO ---------- */
 
 .hero{
-
     height:90vh;
 
     background-image:
@@ -62,11 +71,10 @@ body{
     url("images/hero.webp");
 
     background-size:cover;
-
     background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
-
     align-items:center;
 
     padding:0 8%;
@@ -77,74 +85,100 @@ body{
 }
 
 .location{
-
     color:#C99700;
+
+    font-size:14px;
+    font-weight:bold;
 
     letter-spacing:2px;
 
-    font-weight:bold;
-
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .hero h1{
-
-    color:white;
+    color:#FFFFFF;
 
     font-size:64px;
-
     line-height:1.05;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .hero-text{
-
-    color:#DDD;
+    color:#DDDDDD;
 
     font-size:20px;
 
-    margin-bottom:35px;
+    margin-bottom:36px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:15px;
+    gap:16px;
     flex-wrap:wrap;
 }
 
+/* ---------- BUTTONS ---------- */
+
 .primary-btn{
-
     background:#C99700;
+    color:#111111;
 
-    color:#111;
-
-    padding:16px 26px;
+    padding:16px 28px;
 
     border-radius:10px;
 
     text-decoration:none;
-
     font-weight:bold;
+
+    transition:.3s ease;
+}
+
+.primary-btn:hover{
+    background:#E3B100;
+    transform:translateY(-2px);
 }
 
 .secondary-btn{
+    border:1px solid #FFFFFF;
+    color:#FFFFFF;
 
-    border:1px solid white;
-
-    color:white;
-
-    padding:16px 26px;
+    padding:16px 28px;
 
     border-radius:10px;
 
     text-decoration:none;
-
     font-weight:bold;
-}
-/* ---------- MOBILE RESPONSIVE ---------- */
 
-@media (max-width: 768px){
+    transition:.3s ease;
+}
+
+.secondary-btn:hover{
+    background:#FFFFFF;
+    color:#111111;
+}
+
+/* ---------- COMMON SECTION ---------- */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    font-size:42px;
+    margin-bottom:16px;
+    color:#111111;
+}
+
+.section-text{
+    color:#555555;
+    max-width:700px;
+    font-size:18px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
 
     .navbar{
         padding:16px 6%;
@@ -188,4 +222,15 @@ body{
         text-align:center;
     }
 
+    section{
+        padding:70px 6%;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .section-text{
+        font-size:16px;
+    }
 }
