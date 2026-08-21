@@ -234,3 +234,77 @@ section{
         font-size:16px;
     }
 }
+/* TRUST BAR */
+
+.trust{
+    background:#111;
+    padding:22px 8%;
+}
+
+.trust-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.trust-item{
+    color:#C99700;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* DECISION SECTION */
+
+.decision{
+    background:#F7F7F5;
+}
+
+.card-grid{
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+}
+
+.service-card{
+
+    background:#FFF;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+}
+
+.service-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.service-card h3{
+    padding:20px 20px 10px;
+}
+
+.service-card p{
+    padding:0 20px 24px;
+    color:#666;
+}
+
+@media(max-width:768px){
+
+.trust-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
