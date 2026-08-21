@@ -1,1 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F7F7F5;
+    color:#111;
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#111;
+
+    position:sticky;
+
+    top:0;
+}
+
+.logo{
+    color:#C99700;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+}
+
+.quote-btn{
+
+    text-decoration:none;
+
+    background:#C99700;
+
+    color:#111;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+}
